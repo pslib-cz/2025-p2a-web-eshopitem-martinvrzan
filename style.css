@@ -5,11 +5,23 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #fcfcfc;
+}
+
+main{
+    padding: 2em;
+}
+
+footer {
+    margin: 0 auto;
+}
+
 .container {
     margin: 0 auto;
 }
 
-/*mobil*/
+/*MOBIL*/
 
 .header__content {
     color: white;
@@ -42,19 +54,18 @@ nav a {
     background: white;
     padding: 0.5em;
     border-radius: 12px;
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
 
-.card:hover {
+/*.card:hover {
     box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.164);
-}
+}*/
 
 .card img {
     border-radius: 8px;
-    max-width: 300px;
 }
 
 .badge,
@@ -87,6 +98,7 @@ nav a {
     flex-direction: column;
     gap: 0.5em;
     flex-grow: 1;
+    align-items: center;
 }
 
 .description {
@@ -109,4 +121,85 @@ nav a {
 .price {
     font-weight: bold;
     font-size: 16px;
+}
+
+button {
+    margin-top: auto;
+    padding: 8px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/*TABLET*/
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .products__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.25em;
+        max-width: 720px;
+    }
+
+    .footer__content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 1440px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    .products__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1920px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+    .footer__content{
+        justify-content: center;
+        gap: 1em;
+    }
 }
