@@ -1,1 +1,1 @@
-[Náhled webu] (https://pslib-cz.github.io/2025-p2a-web-eshopitem-martinvrzan/)
+[Náhled webu](https://pslib-cz.github.io/2025-p2a-web-eshopitem-martinvrzan/)
