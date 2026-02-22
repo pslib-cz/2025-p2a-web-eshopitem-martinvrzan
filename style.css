@@ -49,6 +49,64 @@ nav a {
 }
 
 .card:hover {
-    box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.205);
+    box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.164);
 }
 
+.card img {
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.badge,
+.badge__free,
+.badge__new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 8px;
+    font-size: 1em;
+    border-radius: 2px;
+}
+
+.badge {
+    background: #e6006b;
+    color: white;
+}
+
+.badge__free {
+    background: #ac9dff;
+    color: white;
+}
+
+.badge__new {
+    background: #bebebe;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex-grow: 1;
+}
+
+.description {
+    font-size: 13px;
+    color: #666;
+}
+
+.price__row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.old__price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
