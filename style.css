@@ -87,7 +87,7 @@ nav a {
 }
 
 .badge__secondary {
-    background: #5f4bff;
+    background: #604bffdc;
 }
 
 .badge__dark {
@@ -146,7 +146,7 @@ nav a {
 
 .stars {
     color: black;
-    font-size: 1.1rem;
+    font-size: 1.5em;
 }
 
 .reviews {
@@ -171,7 +171,7 @@ nav a {
 .price {
     font-weight: 700;
     font-size: 1.2rem;
-    color: #111;
+    color: #5f5f5f;
 }
 
 footer {
@@ -212,6 +212,7 @@ footer {
     .products__container {
         grid-template-columns: repeat(3, 1fr);
         gap: 70px;
-        padding: 0 4rem;
+        padding: 0 15em;
+        margin: 0 10em;
     }
 }
