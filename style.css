@@ -208,9 +208,10 @@ footer {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .products__container {
-        grid-template-columns: repeat(3, 1fr);  
-        margin: 0 15em;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4em;
+        padding: 0 10em;
     }
 }
