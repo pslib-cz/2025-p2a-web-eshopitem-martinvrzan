@@ -59,13 +59,16 @@ nav a {
 
 .card__image-wrapper {
     position: relative;
-    justify-: center;
+    justify-items: center;
+    aspect-ratio: 1/1;
 }
 
 .card img {
-    width: auto;
     display: block;
     border-radius: 8px;
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
 }
 
 .badge,
@@ -103,11 +106,22 @@ nav a {
     font-size: 2.5em;
     color: #000000;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, color 0.2s ease, transform 0.15s ease;
 }
 
 .card:hover .card__heart {
     opacity: 1;
+}
+
+.card__heart:active {
+    color: #e6006b;
+    transform: scale(1.15);
+}
+
+.card__heart:focus {
+    color: #e6006b;
+    opacity: 1;
+    outline: none;
 }
 
 .card__content {
