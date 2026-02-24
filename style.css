@@ -59,10 +59,11 @@ nav a {
 
 .card__image-wrapper {
     position: relative;
+    justify-: center;
 }
 
 .card img {
-    width: 100%;
+    width: auto;
     display: block;
     border-radius: 8px;
 }
