@@ -60,6 +60,7 @@ nav a {
 .card__image-wrapper {
     position: relative;
     justify-items: center;
+    align-content: center;
     aspect-ratio: 1/1;
 }
 
@@ -221,7 +222,8 @@ footer {
         text-align: left;
         padding: 0 3rem;
     }
-}
+
+  
 
 @media (min-width: 1440px) {
     .products__container {
@@ -229,4 +231,9 @@ footer {
         gap: 4em;
         padding: 0 10em;
     }
+      .card img{
+        width: 70%;
+        height: 70%;
+    }
+}
 }
