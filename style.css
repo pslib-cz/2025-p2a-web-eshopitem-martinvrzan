@@ -50,51 +50,65 @@ nav a {
     gap: 2em;
 }
 
+.card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+}
+
 .card__link {
     display: grid;
     grid-template-rows: auto 1fr;
     text-decoration: none;
     color: inherit;
+    justify-items: center;
 }
+
 
 .card__image-wrapper {
     position: relative;
-    justify-items: center;
-    align-content: center;
     aspect-ratio: 1/1;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card img {
-    display: block;
-    border-radius: 8px;
-    object-fit: contain;
     width: 100%;
     height: 100%;
+    object-fit: contain;
+}
+
+.badge__container {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
 }
 
 .badge,
 .badge__secondary,
 .badge__dark {
-    position: absolute;
-    bottom: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 8px 16px;
-    font-size: 0.85rem;
+    padding: 6px 12px;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: #fff;
     border-radius: 3px;
     white-space: nowrap;
 }
 
 .badge {
     background: #e6006b;
+    color: white;
 }
 
 .badge__secondary {
     background: #604bffdc;
+    color: white;
 }
 
 .badge__dark {
@@ -105,26 +119,21 @@ nav a {
 .card__heart {
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: 5px;
     font-size: 2.5em;
-    color: #000000;
+    color: #000;
     opacity: 0;
-    transition: opacity 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
 .card:hover .card__heart {
     opacity: 1;
 }
 
-.card__heart:active {
+.card__heart:hover {
     color: #e6006b;
-    transform: scale(1.15);
-}
-
-.card__heart:focus {
-    color: #e6006b;
-    opacity: 1;
-    outline: none;
+    transform: scale(1.1);
 }
 
 .card__content {
@@ -133,21 +142,33 @@ nav a {
     align-items: center;
     gap: 10px;
     padding: 20px 12px;
+    text-align: center;
+}
+
+.brand,
+.product__name,
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .brand {
     font-size: 0.95rem;
     font-weight: 600;
+    -webkit-line-clamp: 1;
 }
 
 .product__name {
     font-size: 1.2rem;
     font-weight: 700;
+    -webkit-line-clamp: 1;
 }
 
 .description {
     font-size: 0.9rem;
     color: #555;
+    -webkit-line-clamp: 1;
 }
 
 .card:hover .brand,
@@ -162,7 +183,6 @@ nav a {
 }
 
 .stars {
-    color: rgb(0, 0, 0);
     font-size: 1.5em;
 }
 
@@ -176,7 +196,6 @@ nav a {
     gap: 10px;
     align-items: center;
     justify-content: center;
-    margin-top: 4px;
 }
 
 .old__price {
@@ -206,6 +225,8 @@ footer {
     font-size: 0.85rem;
 }
 
+
+
 @media (min-width: 768px) {
     .products__container {
         grid-template-columns: repeat(2, 1fr);
@@ -223,18 +244,16 @@ footer {
         text-align: left;
         padding: 0 3rem;
     }
-
-  
+}
 
 @media (min-width: 1440px) {
     .products__container {
         grid-template-columns: repeat(3, 1fr);
         gap: 4em;
-        padding:4.5em;
+        padding: 4.5em;
     }
-    .card__image-wrapper{
+
+    .card__image-wrapper {
         width: 70%;
-        height: 70%;
     }
-}
 }
