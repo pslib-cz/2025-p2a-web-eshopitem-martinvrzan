@@ -68,7 +68,7 @@ nav a {
 .card__image-wrapper {
     position: relative;
     aspect-ratio: 1/1;
-    width: 60%;
+    width: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +82,7 @@ nav a {
 
 .badge__container {
     position: absolute;
-    bottom: 14px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -95,7 +95,7 @@ nav a {
 .badge__secondary,
 .badge__dark {
     padding: 6px 12px;
-    font-size: 0.8rem;
+    font-size: 1em;
     font-weight: 700;
     border-radius: 3px;
     white-space: nowrap;
@@ -124,7 +124,7 @@ nav a {
     color: #000;
     opacity: 0;
     cursor: pointer;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 .card:hover .card__heart {
@@ -154,19 +154,19 @@ nav a {
 }
 
 .brand {
-    font-size: 0.95rem;
+    font-size: 1.05em;
     font-weight: 600;
     -webkit-line-clamp: 1;
 }
 
 .product__name {
-    font-size: 1.2rem;
+    font-size: 1.3em;
     font-weight: 700;
     -webkit-line-clamp: 1;
 }
 
 .description {
-    font-size: 0.9rem;
+    font-size: 1em;
     color: #555;
     -webkit-line-clamp: 1;
 }
@@ -253,7 +253,4 @@ footer {
         padding: 4.5em;
     }
 
-    .card__image-wrapper {
-        width: 70%;
-    }
 }
