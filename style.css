@@ -86,7 +86,6 @@ nav a {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: column;
     gap: 8px;
     align-items: center;
 }
@@ -156,19 +155,19 @@ nav a {
 .brand {
     font-size: 1.05em;
     font-weight: 600;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
 }
 
 .product__name {
     font-size: 1.3em;
     font-weight: 700;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
 }
 
 .description {
     font-size: 1em;
     color: #555;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
 }
 
 .card:hover .brand,
