@@ -47,13 +47,15 @@ nav a {
 .products__container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2em;
+    grid-template-rows: repeat(6, auto);
+    
 }
 
 .card {
     display: grid;
     grid-template-rows: subgrid;
-    grid-row: span 2;
+    grid-row: span 6;
+    text-align: center;
 }
 
 .card__link {
@@ -156,6 +158,7 @@ nav a {
     font-size: 1.05em;
     font-weight: 600;
     -webkit-line-clamp: 2;
+    margin-top: 1em;
 }
 
 .product__name {
@@ -178,7 +181,7 @@ nav a {
 .rating {
     display: flex;
     gap: 8px;
-    align-items: center;
+    justify-content: center;
 }
 
 .stars {
@@ -188,6 +191,7 @@ nav a {
 .reviews {
     font-size: 0.85rem;
     color: #777;
+    align-content: center;
 }
 
 .price__row {
@@ -248,7 +252,6 @@ footer {
 @media (min-width: 1440px) {
     .products__container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 4em;
         padding: 4.5em;
     }
 
